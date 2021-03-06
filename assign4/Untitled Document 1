@@ -1,0 +1,21 @@
+/*This program read inputs from another file (testfile) until EOF and Output contents of testfile to stdout leaving out spaces and tabs from the testfile but keeping all other char including \n intact*/
+
+#include <stdio.h>
+int main()
+{
+
+	
+	int c,d;
+
+	for(c=getchar(); c!=EOF; c=getchar())
+	
+	{
+	if(c =' ' || c='\t')    //if(c!=' ' && c!='\t') putchar(c);
+	  continue;
+	else
+	  putchar(c);
+	   
+	}
+
+
+}
